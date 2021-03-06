@@ -14,9 +14,9 @@ lang: en-US
 timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# -------                   # the main title
--------------------
-title: HsuDeveloper_Blog       
+# --------------------------
+title: Chirpy                          # the main title
+
 tagline: A text-focused Jekyll theme   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
@@ -25,23 +25,23 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://HsuDeveloper.github.io'
+url: ''
 
-author: HSu               # change to your full name
+author: your_full_name                  # change to your full name
 
 github:
-  username: HsuDeveloper            # change to your github username
+  username: github_username             # change to your github username
 
 twitter:
-  username: none            # change to your twitter username
+  username: twitter_username            # change to your twitter username
 
 social:
-  name: hsu              # it will shows as the copyright owner in Footer
-  email: hsu9702@naver.com             # change to your email address
+  name: your_full_name                  # it will shows as the copyright owner in Footer
+  email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # change to your twitter homepage
-    - https://github.com/HsuDeveloper       # change to your github homepage
+    - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
