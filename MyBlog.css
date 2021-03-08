@@ -76,9 +76,9 @@ header {
 .right_body{
   flex:80%;
   background-color: white;
-  padding-left: 20px;
   border-style: solid;
   border-color:tomato;
+  padding:5px;
 }
 
 footer {
