@@ -17,3 +17,4 @@ function search_menu() {
   $(document).ready(function(){
     $("#right_body").load("MyBlog.html")
  });
+

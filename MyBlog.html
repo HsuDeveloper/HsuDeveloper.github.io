@@ -2,13 +2,77 @@
     <head>
         <meta charset ="utf-8">
         <title>test</title>
+        <link rel="stylesheet" type="text/css" href="posting.css">
+
     </head>
     <body>
         <div class="posting">
-        <h2>Jekyll 없이 github blog 생성</h2>
-        Jekyll을 활용하면 다양한 테마와 마크다운 문법의 활용으로 더 쾌적하고 쉽게 블로그를 운영할 수 있지만, web 응용 프로그래밍을 공부하면서
-        실습을 병행하기 위해 html,css,javascript를 활용하여 블로그를 생성하고, androidstudio나 알고리즘, 자료구조 공부 내용들도 포스팅 할 
-        계획이다.
+            <h1 id="jekyll-github-blog-">Jekyll 없이 github blog 생성</h1>
+            <p>Web에 대한 이해도와 디자인적인 부분 역시 직접 만들어 보며 실습을 위해 Jekyll없이 github blog를 만들어 보려고 합니다.</p>
+            <p>기본적으로 header, body(left_body,right_body), footer로 layout을 만들고 left_body에는 프로필과 메뉴를, right_body에는 home그리고 menu에 따른 내용을 볼 수 있게 만들었습니다.</p>
+            <p>직접 코딩하여 만들고 있다는 느낌을 주기 위해 전체 body의 background_image에 해당 blog의 css코드를 넣어봤습니다.</p>
+            <hr>
+            <h2 id="code">Code</h2>
+            <p>html, css, javascript, jquery가 사용되었고, 계속 업데이트 할 예정입니다.</p>
+            <ul>
+            <li><p>menu의 경우 javascript code와 css코드를 w3school에서 가져왔습니다. javascript언어를 통해 menu창의 검색기능을 추가하여 메뉴 검색시 편의성을 더하고, css언어를 통해 mouse hover가 발생할 때 색이 변하여 어떤 메뉴에 마우스가 올라 가 있는지 쉽게 확인 할 수 있습니다.</p>
+            <ul>
+            <li><p>JavaScript Code</p>
+            <pre><code class="lang-javascript">function search_menu() {
+            <span class="hljs-built_in">var</span> input, filter, ul, <span class="hljs-built_in">li</span>, a, i;
+            input = document.getElementById(<span class="hljs-string">"search_text"</span>);
+            filter = input.value.toUpperCase();
+            ul = document.getElementById(<span class="hljs-string">"menu_ul"</span>);
+            <span class="hljs-built_in">li</span> = ul.getElementsByTagName(<span class="hljs-string">"li"</span>);
+            <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">li</span>.<span class="hljs-built_in">length</span>; i++) {
+             a = <span class="hljs-built_in">li</span>[i].getElementsByTagName(<span class="hljs-string">"a"</span>)[<span class="hljs-number">0</span>];
+             <span class="hljs-keyword">if</span> (a.innerHTML.toUpperCase().indexOf(filter) &gt; -<span class="hljs-number">1</span>) {
+               <span class="hljs-built_in">li</span>[i].<span class="hljs-built_in">style</span>.<span class="hljs-built_in">display</span> = <span class="hljs-string">""</span>;
+             } <span class="hljs-keyword">else</span> {
+               <span class="hljs-built_in">li</span>[i].<span class="hljs-built_in">style</span>.<span class="hljs-built_in">display</span> = <span class="hljs-string">"none"</span>;
+             }
+            }
+            }
+            </code></pre>
+            </li>
+            <li><p>CSS code</p>
+            <pre>
+            <code>
+            .menu{
+            width:100%;
+            border-style: solid;
+            color:white;
+            margin-top: 20px;
+            }
+            #search_text {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+            }
+            #menu_ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            }
+            #menu_ul li a {
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            display: block
+            }
+            .left_body li a:hover {
+            background-color: black;
+            }
+            </code>
+            </pre>
+            
+            
+            </li>
+            </ul>
+            </li>
+            </ul>
+            
         </div>
     </body>
 </html>
